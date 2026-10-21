@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Call — Vijay Rajkiran</title>
+<meta name="description" content="Book a 20-minute intro call with Vijay Rajkiran about AI product consulting or roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="brand">Vijay&nbsp;Rajkiran</a>
+  <div class="links">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#how-i-work">How I Work</a>
+    <a href="about.html">About</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="#" data-resume-link>Résumé ↓</a>
+  </div>
+</nav>
+
+<section style="padding-bottom:0;">
+  <div class="wrap" style="display:flex; flex-direction:column; gap:16px; max-width:720px;">
+    <div class="eyebrow">Book a Call</div>
+    <h1 style="font-size:38px;">Pick a time that works for you</h1>
+    <p style="color:var(--ink-soft); font-size:16px; line-height:1.65; margin:0;">
+      20-minute intro call — AI product consulting, a role you're hiring for, or just a conversation about
+      shipping AI products. Booking directly below goes straight onto my calendar.
+    </p>
+  </div>
+</section>
+
+<section style="padding-top:32px;">
+  <div class="wrap">
+
+    <!-- Shown only until GOOGLE_CALENDAR_BOOKING_URL is set in js/config.js -->
+    <div id="booking-notice" class="card" style="display:none; padding:28px; margin-bottom:24px; background:var(--accent-soft); border-color:var(--accent);">
+      <strong>Booking link not connected yet.</strong>
+      <p style="margin:8px 0 0; color:var(--ink-soft); font-size:14.5px;">
+        This page will show a live Google Calendar booking form once a Google Calendar
+        "Appointment schedule" link for <code>vijayrajkiranramraj@gmail.com</code> is added to
+        <code>js/config.js</code> (see README.md for the 5-minute setup). Until then, use the
+        button below to email directly.
+      </p>
+    </div>
+
+    <div class="book-embed">
+      <iframe id="booking-frame" title="Book an appointment with Vijay Rajkiran" src="about:blank"></iframe>
+    </div>
+
+    <div style="margin-top:20px; display:flex; gap:14px; flex-wrap:wrap;">
+      <a id="booking-fallback" href="#" class="btn-secondary" data-email-link>Prefer email? Contact directly →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="copyright">© 2026 Vijay Rajkiran</div>
+  <div class="links">
+    <a href="#" data-email-link>Email</a>
+    <a href="#" data-linkedin-link target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
